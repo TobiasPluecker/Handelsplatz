@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/demo_qt_1.dir/demo_qt_1_autogen/mocs_compilation.cpp.o CMakeFiles/demo_qt_1.dir/examples/demo_qt_1.cpp.o -o demo_qt_1  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so 

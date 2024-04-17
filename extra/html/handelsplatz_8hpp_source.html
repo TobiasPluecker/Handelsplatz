@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Logik Handelsplatz: include/handelsplatz.hpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Logik Handelsplatz
+   &#160;<span id="projectnumber">3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">handelsplatz.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;/home/odin/Schreibtisch/poose3/include/artikel.hpp&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;/home/odin/Schreibtisch/poose3/include/haendler.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceHandelsplatz.html">Handelsplatz</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Markt.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classHandelsplatz_1_1Markt.html">Markt</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::vector&lt;Artikel&gt; <a class="code" href="classHandelsplatz_1_1Markt.html#ad5a10375f3973f52957fa91721b6cee8">get_artikel_list</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a704591db563ac2f8e7e9706ca5a58ddb">haendler_erstellen</a>(std::string benutzernamen);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::vector&lt;Angebot&gt; <a class="code" href="classHandelsplatz_1_1Markt.html#af5daa0612dfdd099d7e279a1bc851e87">return_angebote</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a9abff2e28c6ae9927cc680842e18cbc9">angebot_erstellen</a>(std::string verkaefer, std::string gegenstand, <span class="keywordtype">double</span> preis);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classHandelsplatz_1_1Markt.html#a2e49e64546d41cbc99a846240a543846">artikel_print</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classHandelsplatz_1_1Markt.html#a3eac7907bcf2694bf035bcc177305f85">angebote_print</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a7fda916e28581284e5348657ac07de11">verkaufen</a>(std::string kaeufer, <span class="keywordtype">int</span> nummer);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a2335b00c36e1d6db98d82239f892c85f">get_index_person</a>(std::string person);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#ade11acab9439ade290dae701ad26461b">gegenstaende_holen</a>(std::string name, std::string gegenstand);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a8807ad7062342775fe089a1ba886449b">geld_hinzufuegen</a>(std::string person, <span class="keywordtype">double</span> betrag);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a9b7b45490ac79638cb6f88d48f4b66b3">guthaben_einer_person</a>(std::string name);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a2d673175905b7bd9a534e9897de69fc9">angebot_zurueckziehen</a>(<span class="keywordtype">int</span> nummer, std::string ersteller);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a5a6023326169ea14d9fee8b5b5dd28ef">anz_gegenstand</a>(std::string a);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classHandelsplatz_1_1Markt.html#a63395dcc429ebe121c6aa72438c24560">gegenstaende_einer_person</a>(std::string person);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a1438a7079c9afce45d2fab6fecd8eac8">preise_aktualisieren</a>(<span class="keywordtype">int</span> zeit);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Markt.html#ac4ecd19b25eb51694e65d7ce3a07de87">return_angebot_preis</a>(<span class="keywordtype">int</span> nummer);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a3356963e5131abbc08aa7caf2e203d44">preis_von_gegenstand</a>(std::string gegenstand);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHandelsplatz_1_1Markt.html#aa2f38a7963026d118b1d2443a47bd869">besitzt_person_gegenstand</a>(std::string name, std::string gegenstand);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Markt.html#a8dc6ed2752aba1c7ea08c6dfb7f76d0c">geld_auszahlen</a>(std::string name, <span class="keywordtype">double</span> betrag);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordtype">void</span> neuer_handler(<a class="code" href="classHandelsplatz_1_1Haendler.html">Handelsplatz::Haendler</a> neuer_handler);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">void</span> angebot_loeschen(<span class="keywordtype">int</span> nummer);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        std::vector&lt;Artikel&gt; artikel_liste { </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Haus&quot;</span>, 40000),</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Auto&quot;</span>, 200),</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Uhr&quot;</span>, 500),</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Fahrrad&quot;</span>, 500),</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Bild&quot;</span>, 1000),</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Zug&quot;</span>, 6000),</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Computer&quot;</span>, 900),</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a>(<span class="stringliteral">&quot;Ball&quot;</span>, 7000)</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        };</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        std::vector&lt;Haendler&gt; haendler_liste; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        std::vector&lt;Angebot&gt; angebote; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    };</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html">Handelsplatz::Artikel</a></div><div class="ttdoc">Eine Klasse, die einen Artikel repräsentiert.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:17</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Haendler_html"><div class="ttname"><a href="classHandelsplatz_1_1Haendler.html">Handelsplatz::Haendler</a></div><div class="ttdoc">Eine Klasse, die einen Händler repräsentiert.</div><div class="ttdef"><b>Definition:</b> haendler.hpp:12</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html">Handelsplatz::Markt</a></div><div class="ttdoc">Eine Klasse, die den Markt repräsentiert.</div><div class="ttdef"><b>Definition:</b> handelsplatz.hpp:17</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a1438a7079c9afce45d2fab6fecd8eac8"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a1438a7079c9afce45d2fab6fecd8eac8">Handelsplatz::Markt::preise_aktualisieren</a></div><div class="ttdeci">void preise_aktualisieren(int zeit)</div><div class="ttdoc">Aktualisiert die Preise der Artikel.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:371</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a2335b00c36e1d6db98d82239f892c85f"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a2335b00c36e1d6db98d82239f892c85f">Handelsplatz::Markt::get_index_person</a></div><div class="ttdeci">int get_index_person(std::string person)</div><div class="ttdoc">Gibt den Index einer Person in der Händlerliste zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:209</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a2d673175905b7bd9a534e9897de69fc9"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a2d673175905b7bd9a534e9897de69fc9">Handelsplatz::Markt::angebot_zurueckziehen</a></div><div class="ttdeci">void angebot_zurueckziehen(int nummer, std::string ersteller)</div><div class="ttdoc">Zieht ein Angebot zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:337</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a2e49e64546d41cbc99a846240a543846"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a2e49e64546d41cbc99a846240a543846">Handelsplatz::Markt::artikel_print</a></div><div class="ttdeci">std::vector&lt; std::string &gt; artikel_print()</div><div class="ttdoc">Gibt eine Liste der Artikelnamen zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:133</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a3356963e5131abbc08aa7caf2e203d44"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a3356963e5131abbc08aa7caf2e203d44">Handelsplatz::Markt::preis_von_gegenstand</a></div><div class="ttdeci">int preis_von_gegenstand(std::string gegenstand)</div><div class="ttdoc">Gibt den Preis eines bestimmten Gegenstands zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:422</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a3eac7907bcf2694bf035bcc177305f85"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a3eac7907bcf2694bf035bcc177305f85">Handelsplatz::Markt::angebote_print</a></div><div class="ttdeci">std::vector&lt; std::string &gt; angebote_print()</div><div class="ttdoc">Gibt eine Liste der Angebotdetails zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:146</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a5a6023326169ea14d9fee8b5b5dd28ef"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a5a6023326169ea14d9fee8b5b5dd28ef">Handelsplatz::Markt::anz_gegenstand</a></div><div class="ttdeci">int anz_gegenstand(std::string a)</div><div class="ttdoc">Gibt die Anzahl der verfügbaren Gegenstände mit einem bestimmten Namen zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:403</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a63395dcc429ebe121c6aa72438c24560"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a63395dcc429ebe121c6aa72438c24560">Handelsplatz::Markt::gegenstaende_einer_person</a></div><div class="ttdeci">std::vector&lt; std::string &gt; gegenstaende_einer_person(std::string person)</div><div class="ttdoc">Gibt eine Liste der Gegenstände einer Person zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:317</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a704591db563ac2f8e7e9706ca5a58ddb"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a704591db563ac2f8e7e9706ca5a58ddb">Handelsplatz::Markt::haendler_erstellen</a></div><div class="ttdeci">void haendler_erstellen(std::string benutzernamen)</div><div class="ttdoc">Erstellt einen neuen Händler mit dem angegebenen Benutzernamen.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:11</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a7fda916e28581284e5348657ac07de11"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a7fda916e28581284e5348657ac07de11">Handelsplatz::Markt::verkaufen</a></div><div class="ttdeci">void verkaufen(std::string kaeufer, int nummer)</div><div class="ttdoc">Verkauft einen Artikel an einen Käufer.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:169</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a8807ad7062342775fe089a1ba886449b"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a8807ad7062342775fe089a1ba886449b">Handelsplatz::Markt::geld_hinzufuegen</a></div><div class="ttdeci">void geld_hinzufuegen(std::string person, double betrag)</div><div class="ttdoc">Fügt einer Person Geld hinzu.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:262</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a8dc6ed2752aba1c7ea08c6dfb7f76d0c"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a8dc6ed2752aba1c7ea08c6dfb7f76d0c">Handelsplatz::Markt::geld_auszahlen</a></div><div class="ttdeci">void geld_auszahlen(std::string name, double betrag)</div><div class="ttdoc">Zahlt einen bestimmten Geldbetrag an einen Händler aus.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:453</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a9abff2e28c6ae9927cc680842e18cbc9"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a9abff2e28c6ae9927cc680842e18cbc9">Handelsplatz::Markt::angebot_erstellen</a></div><div class="ttdeci">int angebot_erstellen(std::string verkaefer, std::string gegenstand, double preis)</div><div class="ttdoc">Erstellt ein neues Angebot.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:60</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_a9b7b45490ac79638cb6f88d48f4b66b3"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#a9b7b45490ac79638cb6f88d48f4b66b3">Handelsplatz::Markt::guthaben_einer_person</a></div><div class="ttdeci">double guthaben_einer_person(std::string name)</div><div class="ttdoc">Gibt das Guthaben einer Person zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:284</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_aa2f38a7963026d118b1d2443a47bd869"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#aa2f38a7963026d118b1d2443a47bd869">Handelsplatz::Markt::besitzt_person_gegenstand</a></div><div class="ttdeci">bool besitzt_person_gegenstand(std::string name, std::string gegenstand)</div><div class="ttdoc">Überprüft, ob eine Person einen bestimmten Gegenstand besitzt.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:442</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_ac4ecd19b25eb51694e65d7ce3a07de87"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#ac4ecd19b25eb51694e65d7ce3a07de87">Handelsplatz::Markt::return_angebot_preis</a></div><div class="ttdeci">double return_angebot_preis(int nummer)</div><div class="ttdoc">Gibt den Preis eines bestimmten Angebots zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:384</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_ad5a10375f3973f52957fa91721b6cee8"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#ad5a10375f3973f52957fa91721b6cee8">Handelsplatz::Markt::get_artikel_list</a></div><div class="ttdeci">std::vector&lt; Artikel &gt; get_artikel_list()</div><div class="ttdoc">Gibt eine Liste der verfügbaren Artikel zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:39</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_ade11acab9439ade290dae701ad26461b"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#ade11acab9439ade290dae701ad26461b">Handelsplatz::Markt::gegenstaende_holen</a></div><div class="ttdeci">void gegenstaende_holen(std::string name, std::string gegenstand)</div><div class="ttdoc">Holt einen Gegenstand von einer Person.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:224</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Markt_html_af5daa0612dfdd099d7e279a1bc851e87"><div class="ttname"><a href="classHandelsplatz_1_1Markt.html#af5daa0612dfdd099d7e279a1bc851e87">Handelsplatz::Markt::return_angebote</a></div><div class="ttdeci">std::vector&lt; Angebot &gt; return_angebote()</div><div class="ttdoc">Gibt eine Liste der aktuellen Angebote zurück.</div><div class="ttdef"><b>Definition:</b> handelsplatz.cpp:47</div></div>
+<div class="ttc" id="anamespaceHandelsplatz_html"><div class="ttname"><a href="namespaceHandelsplatz.html">Handelsplatz</a></div><div class="ttdoc">Ein Namespace, der Klassen für den Handelsplatz enthält.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,548 @@
+\hypertarget{classHandelsplatz_1_1Markt}{}\doxysection{Handelsplatz\+::Markt Klassenreferenz}
+\label{classHandelsplatz_1_1Markt}\index{Handelsplatz::Markt@{Handelsplatz::Markt}}
+
+
+Eine Klasse, die den \mbox{\hyperlink{classHandelsplatz_1_1Markt}{Markt}} repräsentiert.  
+
+
+
+
+{\ttfamily \#include $<$handelsplatz.\+hpp$>$}
+
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} $>$ \mbox{\hyperlink{classHandelsplatz_1_1Markt_ad5a10375f3973f52957fa91721b6cee8}{get\+\_\+artikel\+\_\+list}} ()
+\begin{DoxyCompactList}\small\item\em Gibt eine Liste der verfügbaren \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_a704591db563ac2f8e7e9706ca5a58ddb}{haendler\+\_\+erstellen}} (std\+::string benutzernamen)
+\begin{DoxyCompactList}\small\item\em Erstellt einen neuen Händler mit dem angegebenen Benutzernamen. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} $>$ \mbox{\hyperlink{classHandelsplatz_1_1Markt_af5daa0612dfdd099d7e279a1bc851e87}{return\+\_\+angebote}} ()
+\begin{DoxyCompactList}\small\item\em Gibt eine Liste der aktuellen Angebote zurück. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHandelsplatz_1_1Markt_a9abff2e28c6ae9927cc680842e18cbc9}{angebot\+\_\+erstellen}} (std\+::string verkaefer, std\+::string gegenstand, double preis)
+\begin{DoxyCompactList}\small\item\em Erstellt ein neues \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classHandelsplatz_1_1Markt_a2e49e64546d41cbc99a846240a543846}{artikel\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em Gibt eine Liste der Artikelnamen zurück. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classHandelsplatz_1_1Markt_a3eac7907bcf2694bf035bcc177305f85}{angebote\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em Gibt eine Liste der Angebotdetails zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_a7fda916e28581284e5348657ac07de11}{verkaufen}} (std\+::string kaeufer, int nummer)
+\begin{DoxyCompactList}\small\item\em Verkauft einen \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} an einen Käufer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHandelsplatz_1_1Markt_a2335b00c36e1d6db98d82239f892c85f}{get\+\_\+index\+\_\+person}} (std\+::string person)
+\begin{DoxyCompactList}\small\item\em Gibt den Index einer Person in der Händlerliste zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_ade11acab9439ade290dae701ad26461b}{gegenstaende\+\_\+holen}} (std\+::string name, std\+::string gegenstand)
+\begin{DoxyCompactList}\small\item\em Holt einen Gegenstand von einer Person. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_a8807ad7062342775fe089a1ba886449b}{geld\+\_\+hinzufuegen}} (std\+::string person, double betrag)
+\begin{DoxyCompactList}\small\item\em Fügt einer Person Geld hinzu. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHandelsplatz_1_1Markt_a9b7b45490ac79638cb6f88d48f4b66b3}{guthaben\+\_\+einer\+\_\+person}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Gibt das Guthaben einer Person zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_a2d673175905b7bd9a534e9897de69fc9}{angebot\+\_\+zurueckziehen}} (int nummer, std\+::string ersteller)
+\begin{DoxyCompactList}\small\item\em Zieht ein \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} zurück. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHandelsplatz_1_1Markt_a5a6023326169ea14d9fee8b5b5dd28ef}{anz\+\_\+gegenstand}} (std\+::string a)
+\begin{DoxyCompactList}\small\item\em Gibt die Anzahl der verfügbaren Gegenstände mit einem bestimmten Namen zurück. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classHandelsplatz_1_1Markt_a63395dcc429ebe121c6aa72438c24560}{gegenstaende\+\_\+einer\+\_\+person}} (std\+::string person)
+\begin{DoxyCompactList}\small\item\em Gibt eine Liste der Gegenstände einer Person zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_a1438a7079c9afce45d2fab6fecd8eac8}{preise\+\_\+aktualisieren}} (int zeit)
+\begin{DoxyCompactList}\small\item\em Aktualisiert die Preise der \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHandelsplatz_1_1Markt_ac4ecd19b25eb51694e65d7ce3a07de87}{return\+\_\+angebot\+\_\+preis}} (int nummer)
+\begin{DoxyCompactList}\small\item\em Gibt den Preis eines bestimmten Angebots zurück. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHandelsplatz_1_1Markt_a3356963e5131abbc08aa7caf2e203d44}{preis\+\_\+von\+\_\+gegenstand}} (std\+::string gegenstand)
+\begin{DoxyCompactList}\small\item\em Gibt den Preis eines bestimmten Gegenstands zurück. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHandelsplatz_1_1Markt_aa2f38a7963026d118b1d2443a47bd869}{besitzt\+\_\+person\+\_\+gegenstand}} (std\+::string name, std\+::string gegenstand)
+\begin{DoxyCompactList}\small\item\em Überprüft, ob eine Person einen bestimmten Gegenstand besitzt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Markt_a8dc6ed2752aba1c7ea08c6dfb7f76d0c}{geld\+\_\+auszahlen}} (std\+::string name, double betrag)
+\begin{DoxyCompactList}\small\item\em Zahlt einen bestimmten Geldbetrag an einen Händler aus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Eine Klasse, die den \mbox{\hyperlink{classHandelsplatz_1_1Markt}{Markt}} repräsentiert. 
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a9abff2e28c6ae9927cc680842e18cbc9}\label{classHandelsplatz_1_1Markt_a9abff2e28c6ae9927cc680842e18cbc9}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!angebot\_erstellen@{angebot\_erstellen}}
+\index{angebot\_erstellen@{angebot\_erstellen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{angebot\_erstellen()}{angebot\_erstellen()}}
+{\footnotesize\ttfamily int Handelsplatz\+::\+Markt\+::angebot\+\_\+erstellen (\begin{DoxyParamCaption}\item[{std\+::string}]{verkaefer,  }\item[{std\+::string}]{gegenstand,  }\item[{double}]{preis }\end{DoxyParamCaption})}
+
+
+
+Erstellt ein neues \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}}. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em verkaefer} & Der Verkäufer des Angebots. \\
+\hline
+{\em gegenstand} & Der Name des Gegenstands im \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}}. \\
+\hline
+{\em preis} & Der Preis des Angebots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Die Nummer des erstellten Angebots.
+\end{DoxyReturn}
+Erstellt ein neues \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} auf dem \mbox{\hyperlink{classHandelsplatz_1_1Markt}{Markt}}. 
+\begin{DoxyParams}{Parameter}
+{\em verkaefer} & Der Benutzername des Verkäufers. \\
+\hline
+{\em gegenstand} & Der Name des angebotenen Gegenstands. \\
+\hline
+{\em preis} & Der Preis des Angebots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Die generierte Angebotsnummer. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Ausnahmebehandlung}
+{\em std\+::runtime\+\_\+error} & Wenn keine eindeutige Angebotsnummer generiert werden kann oder wenn der Verkäufer den Gegenstand nicht besitzt. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a2d673175905b7bd9a534e9897de69fc9}\label{classHandelsplatz_1_1Markt_a2d673175905b7bd9a534e9897de69fc9}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!angebot\_zurueckziehen@{angebot\_zurueckziehen}}
+\index{angebot\_zurueckziehen@{angebot\_zurueckziehen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{angebot\_zurueckziehen()}{angebot\_zurueckziehen()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::angebot\+\_\+zurueckziehen (\begin{DoxyParamCaption}\item[{int}]{nummer,  }\item[{std\+::string}]{ersteller }\end{DoxyParamCaption})}
+
+
+
+Zieht ein \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} zurück. 
+
+Zieht ein \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} zurück, das von einer bestimmten Person erstellt wurde.
+
+
+\begin{DoxyParams}{Parameter}
+{\em nummer} & Die Nummer des Angebots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+True, wenn das \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} erfolgreich zurückgezogen wurde, sonst False.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em nummer} & Die Nummer des Angebots. \\
+\hline
+{\em ersteller} & Der Name des Erstellers des Angebots. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Ausnahmebehandlung}
+{\em std\+::runtime\+\_\+error} & Wenn das \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} nicht gefunden wurde. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion sucht das \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} mit der angegebenen Nummer und dem angegebenen Ersteller und zieht es zurück. Der Gegenstand des Angebots wird an den Ersteller zurückgegeben und das \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} wird aus der Liste der Angebote gelöscht. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a3eac7907bcf2694bf035bcc177305f85}\label{classHandelsplatz_1_1Markt_a3eac7907bcf2694bf035bcc177305f85}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!angebote\_print@{angebote\_print}}
+\index{angebote\_print@{angebote\_print}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{angebote\_print()}{angebote\_print()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Handelsplatz\+::\+Markt\+::angebote\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt eine Liste der Angebotdetails zurück. 
+
+Gibt ein Array mit allen Angeboten, welche von Händlern erstellt wurden zurück.
+
+\begin{DoxyReturn}{Rückgabe}
+Ein Vektor mit den Angebotdetails.
+
+Das Array, welches vorgefertigte strings auf deutsch enthält (zum Testen) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a5a6023326169ea14d9fee8b5b5dd28ef}\label{classHandelsplatz_1_1Markt_a5a6023326169ea14d9fee8b5b5dd28ef}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!anz\_gegenstand@{anz\_gegenstand}}
+\index{anz\_gegenstand@{anz\_gegenstand}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{anz\_gegenstand()}{anz\_gegenstand()}}
+{\footnotesize\ttfamily int Handelsplatz\+::\+Markt\+::anz\+\_\+gegenstand (\begin{DoxyParamCaption}\item[{std\+::string}]{a }\end{DoxyParamCaption})}
+
+
+
+Gibt die Anzahl der verfügbaren Gegenstände mit einem bestimmten Namen zurück. 
+
+Gibt den Preis eines bestimmten Angebots zurück.
+
+
+\begin{DoxyParams}{Parameter}
+{\em a} & Der Name des Gegenstands. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Die Anzahl der verfügbaren Gegenstände.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em nummer} & Die Nummer des Angebots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Preis des Angebots. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion sucht nach dem \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} mit der angegebenen Nummer und gibt den Preis zurück. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a2e49e64546d41cbc99a846240a543846}\label{classHandelsplatz_1_1Markt_a2e49e64546d41cbc99a846240a543846}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!artikel\_print@{artikel\_print}}
+\index{artikel\_print@{artikel\_print}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{artikel\_print()}{artikel\_print()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Handelsplatz\+::\+Markt\+::artikel\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt eine Liste der Artikelnamen zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Ein Vektor mit den Namen der \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_aa2f38a7963026d118b1d2443a47bd869}\label{classHandelsplatz_1_1Markt_aa2f38a7963026d118b1d2443a47bd869}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!besitzt\_person\_gegenstand@{besitzt\_person\_gegenstand}}
+\index{besitzt\_person\_gegenstand@{besitzt\_person\_gegenstand}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{besitzt\_person\_gegenstand()}{besitzt\_person\_gegenstand()}}
+{\footnotesize\ttfamily bool Handelsplatz\+::\+Markt\+::besitzt\+\_\+person\+\_\+gegenstand (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{gegenstand }\end{DoxyParamCaption})}
+
+
+
+Überprüft, ob eine Person einen bestimmten Gegenstand besitzt. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name der Person. \\
+\hline
+{\em gegenstand} & Der Name des Gegenstands. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+True, wenn die Person den Gegenstand besitzt, sonst False.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name der Person. \\
+\hline
+{\em gegenstand} & Der Name des Gegenstands. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+True, wenn die Person den Gegenstand besitzt, andernfalls False. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion überprüft, ob die Person mit dem angegebenen Namen den angegebenen Gegenstand besitzt. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a63395dcc429ebe121c6aa72438c24560}\label{classHandelsplatz_1_1Markt_a63395dcc429ebe121c6aa72438c24560}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!gegenstaende\_einer\_person@{gegenstaende\_einer\_person}}
+\index{gegenstaende\_einer\_person@{gegenstaende\_einer\_person}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{gegenstaende\_einer\_person()}{gegenstaende\_einer\_person()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Handelsplatz\+::\+Markt\+::gegenstaende\+\_\+einer\+\_\+person (\begin{DoxyParamCaption}\item[{std\+::string}]{person }\end{DoxyParamCaption})}
+
+
+
+Gibt eine Liste der Gegenstände einer Person zurück. 
+
+Gibt die Liste der Gegenstände zurück, die eine bestimmte Person besitzt.
+
+
+\begin{DoxyParams}{Parameter}
+{\em person} & Der Name der Person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Ein Vektor mit den Namen der Gegenstände.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em person} & Der Name der Person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Eine Liste der Gegenstände, die die Person besitzt. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion ruft die Methode {\ttfamily artikel\+\_\+return()} der entsprechenden Person auf, um die Liste der Gegenstände abzurufen. Wenn die Liste nicht leer ist, wird sie zurückgegeben. Andernfalls wird eine Meldung ausgegeben und eine leere Liste zurückgegeben. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_ade11acab9439ade290dae701ad26461b}\label{classHandelsplatz_1_1Markt_ade11acab9439ade290dae701ad26461b}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!gegenstaende\_holen@{gegenstaende\_holen}}
+\index{gegenstaende\_holen@{gegenstaende\_holen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{gegenstaende\_holen()}{gegenstaende\_holen()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::gegenstaende\+\_\+holen (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{gegenstand }\end{DoxyParamCaption})}
+
+
+
+Holt einen Gegenstand von einer Person. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name der Person. \\
+\hline
+{\em gegenstand} & Der Name des Gegenstands.\\
+\hline
+\end{DoxyParams}
+Holt einen Gegenstand für eine bestimmte Person. 
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name der Person. \\
+\hline
+{\em gegenstand} & Der Name des zu holenden Gegenstands. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a8dc6ed2752aba1c7ea08c6dfb7f76d0c}\label{classHandelsplatz_1_1Markt_a8dc6ed2752aba1c7ea08c6dfb7f76d0c}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!geld\_auszahlen@{geld\_auszahlen}}
+\index{geld\_auszahlen@{geld\_auszahlen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{geld\_auszahlen()}{geld\_auszahlen()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::geld\+\_\+auszahlen (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{double}]{betrag }\end{DoxyParamCaption})}
+
+
+
+Zahlt einen bestimmten Geldbetrag an einen Händler aus. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name des Händlers, dem das Geld ausgezahlt werden soll. \\
+\hline
+{\em betrag} & Der auszuzahlende Geldbetrag. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a8807ad7062342775fe089a1ba886449b}\label{classHandelsplatz_1_1Markt_a8807ad7062342775fe089a1ba886449b}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!geld\_hinzufuegen@{geld\_hinzufuegen}}
+\index{geld\_hinzufuegen@{geld\_hinzufuegen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{geld\_hinzufuegen()}{geld\_hinzufuegen()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::geld\+\_\+hinzufuegen (\begin{DoxyParamCaption}\item[{std\+::string}]{person,  }\item[{double}]{betrag }\end{DoxyParamCaption})}
+
+
+
+Fügt einer Person Geld hinzu. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em person} & Der Name der Person. \\
+\hline
+{\em betrag} & Der Betrag, der hinzugefügt werden soll.\\
+\hline
+{\em person} & Der Name der Person. \\
+\hline
+{\em betrag} & Der Betrag, der hinzugefügt werden soll. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Ausnahmebehandlung}
+{\em std\+::runtime\+\_\+error} & Wenn der übergebene Betrag kleiner oder gleich 0 ist. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion ruft die interne Funktion {\ttfamily get\+\_\+index\+\_\+person} auf, um den Index der Person in der Händlerliste zu erhalten. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_ad5a10375f3973f52957fa91721b6cee8}\label{classHandelsplatz_1_1Markt_ad5a10375f3973f52957fa91721b6cee8}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!get\_artikel\_list@{get\_artikel\_list}}
+\index{get\_artikel\_list@{get\_artikel\_list}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{get\_artikel\_list()}{get\_artikel\_list()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Handelsplatz\+::\+Artikel}} $>$ Handelsplatz\+::\+Markt\+::get\+\_\+artikel\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt eine Liste der verfügbaren \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} zurück. 
+
+Gibt ein Array mit allen Artikeln und deren aktuellen Preisen zurück.
+
+\begin{DoxyReturn}{Rückgabe}
+Ein Vektor mit den Artikeln.
+
+Das Array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a2335b00c36e1d6db98d82239f892c85f}\label{classHandelsplatz_1_1Markt_a2335b00c36e1d6db98d82239f892c85f}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!get\_index\_person@{get\_index\_person}}
+\index{get\_index\_person@{get\_index\_person}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{get\_index\_person()}{get\_index\_person()}}
+{\footnotesize\ttfamily int Handelsplatz\+::\+Markt\+::get\+\_\+index\+\_\+person (\begin{DoxyParamCaption}\item[{std\+::string}]{person }\end{DoxyParamCaption})}
+
+
+
+Gibt den Index einer Person in der Händlerliste zurück. 
+
+Gibt den Index der Person in der Händlerliste zurück.
+
+
+\begin{DoxyParams}{Parameter}
+{\em person} & Der Name der Person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Index der Person oder -\/1, wenn die Person nicht gefunden wurde.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em person} & Der Name der Person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Index der Person in der Händlerliste. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Zu beachten}
+Falls die Person nicht gefunden wird, wird der Index 0 zurückgegeben und eine Meldung ausgegeben. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a9b7b45490ac79638cb6f88d48f4b66b3}\label{classHandelsplatz_1_1Markt_a9b7b45490ac79638cb6f88d48f4b66b3}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!guthaben\_einer\_person@{guthaben\_einer\_person}}
+\index{guthaben\_einer\_person@{guthaben\_einer\_person}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{guthaben\_einer\_person()}{guthaben\_einer\_person()}}
+{\footnotesize\ttfamily double Handelsplatz\+::\+Markt\+::guthaben\+\_\+einer\+\_\+person (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Gibt das Guthaben einer Person zurück. 
+
+Ruft das Guthaben einer Person ab.
+
+
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name der Person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Das Guthaben der Person.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em name} & Der Name der Person. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Das Guthaben der Person. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion ruft die interne Funktion {\ttfamily get\+\_\+index\+\_\+person} auf, um den Index der Person in der Händlerliste zu erhalten. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a704591db563ac2f8e7e9706ca5a58ddb}\label{classHandelsplatz_1_1Markt_a704591db563ac2f8e7e9706ca5a58ddb}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!haendler\_erstellen@{haendler\_erstellen}}
+\index{haendler\_erstellen@{haendler\_erstellen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{haendler\_erstellen()}{haendler\_erstellen()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::haendler\+\_\+erstellen (\begin{DoxyParamCaption}\item[{std\+::string}]{benutzername }\end{DoxyParamCaption})}
+
+
+
+Erstellt einen neuen Händler mit dem angegebenen Benutzernamen. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em benutzernamen} & Der Benutzername des neuen Händlers.\\
+\hline
+{\em benutzername} & Der Benutzername des neuen Händlers. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Ausnahmebehandlung}
+{\em std\+::runtime\+\_\+error} & Wenn der angegebene Benutzername bereits existiert. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a3356963e5131abbc08aa7caf2e203d44}\label{classHandelsplatz_1_1Markt_a3356963e5131abbc08aa7caf2e203d44}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!preis\_von\_gegenstand@{preis\_von\_gegenstand}}
+\index{preis\_von\_gegenstand@{preis\_von\_gegenstand}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{preis\_von\_gegenstand()}{preis\_von\_gegenstand()}}
+{\footnotesize\ttfamily int Handelsplatz\+::\+Markt\+::preis\+\_\+von\+\_\+gegenstand (\begin{DoxyParamCaption}\item[{std\+::string}]{gegenstand }\end{DoxyParamCaption})}
+
+
+
+Gibt den Preis eines bestimmten Gegenstands zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em gegenstand} & Der Name des Gegenstands. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Preis des Gegenstands.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameter}
+{\em gegenstand} & Der Name des Gegenstands. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Preis des Gegenstands. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion sucht nach dem Gegenstand mit dem angegebenen Namen und gibt den Preis zurück. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a1438a7079c9afce45d2fab6fecd8eac8}\label{classHandelsplatz_1_1Markt_a1438a7079c9afce45d2fab6fecd8eac8}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!preise\_aktualisieren@{preise\_aktualisieren}}
+\index{preise\_aktualisieren@{preise\_aktualisieren}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{preise\_aktualisieren()}{preise\_aktualisieren()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::preise\+\_\+aktualisieren (\begin{DoxyParamCaption}\item[{int}]{zeit }\end{DoxyParamCaption})}
+
+
+
+Aktualisiert die Preise der \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}}. 
+
+Aktualisiert die Preise der \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} über eine bestimmte Zeitperiode.
+
+
+\begin{DoxyParams}{Parameter}
+{\em zeit} & Die vergangene Zeit.\\
+\hline
+{\em zeit} & Die Anzahl der Zeitschritte, um die die Preise aktualisiert werden sollen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Zu beachten}
+Die Funktion aktualisiert die Preise der \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} über die angegebene Anzahl von Zeitschritten. Die Preise werden mit einer Streuung von 0.\+8 und einem Zeitschritt von 0.\+001 aktualisiert. 
+\end{DoxyNote}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_ac4ecd19b25eb51694e65d7ce3a07de87}\label{classHandelsplatz_1_1Markt_ac4ecd19b25eb51694e65d7ce3a07de87}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!return\_angebot\_preis@{return\_angebot\_preis}}
+\index{return\_angebot\_preis@{return\_angebot\_preis}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{return\_angebot\_preis()}{return\_angebot\_preis()}}
+{\footnotesize\ttfamily double Handelsplatz\+::\+Markt\+::return\+\_\+angebot\+\_\+preis (\begin{DoxyParamCaption}\item[{int}]{nummer }\end{DoxyParamCaption})}
+
+
+
+Gibt den Preis eines bestimmten Angebots zurück. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em nummer} & Die Nummer des Angebots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Der Preis des Angebots. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_af5daa0612dfdd099d7e279a1bc851e87}\label{classHandelsplatz_1_1Markt_af5daa0612dfdd099d7e279a1bc851e87}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!return\_angebote@{return\_angebote}}
+\index{return\_angebote@{return\_angebote}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{return\_angebote()}{return\_angebote()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Handelsplatz\+::\+Angebot}} $>$ Handelsplatz\+::\+Markt\+::return\+\_\+angebote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt eine Liste der aktuellen Angebote zurück. 
+
+Gibt ein Array mit allen Angeboten, welche von Händlern erstellt wurden zurück.
+
+\begin{DoxyReturn}{Rückgabe}
+Ein Vektor mit den Angeboten.
+
+Das Array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Markt_a7fda916e28581284e5348657ac07de11}\label{classHandelsplatz_1_1Markt_a7fda916e28581284e5348657ac07de11}} 
+\index{Handelsplatz::Markt@{Handelsplatz::Markt}!verkaufen@{verkaufen}}
+\index{verkaufen@{verkaufen}!Handelsplatz::Markt@{Handelsplatz::Markt}}
+\doxysubsubsection{\texorpdfstring{verkaufen()}{verkaufen()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Markt\+::verkaufen (\begin{DoxyParamCaption}\item[{std\+::string}]{kaeufer,  }\item[{int}]{nummer }\end{DoxyParamCaption})}
+
+
+
+Verkauft einen \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} an einen Käufer. 
+
+Verkauft einen Gegenstand an einen Käufer.
+
+
+\begin{DoxyParams}{Parameter}
+{\em kaeufer} & Der Käufer des Artikels. \\
+\hline
+{\em nummer} & Die Nummer des Angebots.\\
+\hline
+{\em kaeufer} & Der Name des Käufers. \\
+\hline
+{\em nummer} & Die Nummer des Angebots, das verkauft werden soll. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Ausnahmebehandlung}
+{\em std\+::runtime\+\_\+error} & Wenn das \mbox{\hyperlink{classHandelsplatz_1_1Angebot}{Angebot}} nicht gefunden wird oder der Käufer nicht genügend Geld hat. \\
+\hline
+\end{DoxyExceptions}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\+:\begin{DoxyCompactItemize}
+\item 
+include/handelsplatz.\+hpp\item 
+src/handelsplatz.\+cpp\end{DoxyCompactItemize}

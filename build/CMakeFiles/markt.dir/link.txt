@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -flto -shared  -o markt.cpython-310-x86_64-linux-gnu.so CMakeFiles/markt.dir/markt_autogen/mocs_compilation.cpp.o CMakeFiles/markt.dir/extra/markt_pybind.cpp.o CMakeFiles/markt.dir/src/artikel.cpp.o CMakeFiles/markt.dir/src/haendler.cpp.o CMakeFiles/markt.dir/src/handelsplatz.cpp.o 

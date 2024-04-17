@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Logik Handelsplatz: include/artikel.hpp Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Logik Handelsplatz
+   &#160;<span id="projectnumber">3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Suchen');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">artikel.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceHandelsplatz.html">Handelsplatz</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classHandelsplatz_1_1Artikel.html">Artikel</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a6638a31904813a9069e2f2a910b9e72b">   24</a></span>&#160;        <a class="code" href="classHandelsplatz_1_1Artikel.html#a6638a31904813a9069e2f2a910b9e72b">Artikel</a>(std::string name_, <span class="keywordtype">double</span> wert_) : name(name_), wert(wert_) {}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a6844af891b96d38c75ba32a78177782c">   30</a></span>&#160;        std::string <a class="code" href="classHandelsplatz_1_1Artikel.html#a6844af891b96d38c75ba32a78177782c">get_name_</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a9d1c808d54374f8ec52783e58326f139">   36</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#a9d1c808d54374f8ec52783e58326f139">set_name</a>(std::string name_);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#aebf9b6d0b75734a795682c5ba23eeebf">   42</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#aebf9b6d0b75734a795682c5ba23eeebf">get_wert_</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a4f110249d68e0d9559a34c1e963ebc26">   48</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#a4f110249d68e0d9559a34c1e963ebc26">set_wert</a>(<span class="keywordtype">double</span> wert_);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a2674cf1b304dab05825c2a06ddf65c49">   54</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#a2674cf1b304dab05825c2a06ddf65c49">get_streuung</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> streuung;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#aa860d64a890edf7b77750430d77f1d54">   62</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#aa860d64a890edf7b77750430d77f1d54">get_tendenz</a>() {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> tendenz;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#aeadeb100094e6aa57824606c40800c94">   75</a></span>&#160;        std::vector&lt;double&gt; <a class="code" href="classHandelsplatz_1_1Artikel.html#aeadeb100094e6aa57824606c40800c94">kursverlauf</a>(<span class="keywordtype">double</span> tendenz, <span class="keywordtype">double</span> streuung, <span class="keywordtype">double</span> dt, <span class="keywordtype">double</span> start, <span class="keywordtype">int</span> anzahl);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#ab9f0f02d56a87dd3c23a0e89a240348b">   80</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#ab9f0f02d56a87dd3c23a0e89a240348b">aktualisiere_kurs</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a997493b48b6be3e99bd9057827cc6d9c">   86</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#a997493b48b6be3e99bd9057827cc6d9c">aktueller_kurs</a>() {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            wert = kurs[kurs.size()-1];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">return</span> kurs[kurs.size()-1];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a27fec5952c11b7dcdd2be6dbb18635c6">   94</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#a27fec5952c11b7dcdd2be6dbb18635c6">anz_minus_eins</a>() {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            anz--;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Artikel.html#a58afb8024ec438c5dcab2b2f7efdd1b1">  102</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHandelsplatz_1_1Artikel.html#a58afb8024ec438c5dcab2b2f7efdd1b1">get_anz</a>() {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> anz;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::string name; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">double</span> wert = 0; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">double</span> tendenz = 0.3 * (2 * <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(rand()) / RAND_MAX - 1.0); </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordtype">double</span> streuung = 0.8; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordtype">double</span> dt = 0.001; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        std::vector&lt;double&gt; kurs; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">int</span> anz = 10; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    };</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Angebot.html">  120</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classHandelsplatz_1_1Angebot.html">Angebot</a> {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Angebot.html#ad06131148797aec9b7ea4fe0cf675643">  129</a></span>&#160;        <a class="code" href="classHandelsplatz_1_1Angebot.html#ad06131148797aec9b7ea4fe0cf675643">Angebot</a>(std::string ersteller_, std::string objekt_, <span class="keywordtype">double</span> wert_, <span class="keywordtype">int</span> art_num_) : ersteller(ersteller_), obj(objekt_), wert(wert_), art_num(art_num_) {}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Angebot.html#aa8475da73c73bd33519f5513677bb203">  135</a></span>&#160;        std::string <a class="code" href="classHandelsplatz_1_1Angebot.html#aa8475da73c73bd33519f5513677bb203">get_ersteller</a>();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Angebot.html#a37c88952ca76b969f9108972bbaa90f8">  141</a></span>&#160;        std::string <a class="code" href="classHandelsplatz_1_1Angebot.html#a37c88952ca76b969f9108972bbaa90f8">get_obj</a>();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Angebot.html#a10040af24f0b23fdfa93791759577b92">  147</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classHandelsplatz_1_1Angebot.html#a10040af24f0b23fdfa93791759577b92">get_wert</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classHandelsplatz_1_1Angebot.html#a958430934af5353b10ace74d146bc1f8">  153</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classHandelsplatz_1_1Angebot.html#a958430934af5353b10ace74d146bc1f8">get_art_num</a>() {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> art_num;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        std::string ersteller; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        std::string obj; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">double</span> wert; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">int</span> art_num; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    };</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="ttc" id="aclassHandelsplatz_1_1Angebot_html"><div class="ttname"><a href="classHandelsplatz_1_1Angebot.html">Handelsplatz::Angebot</a></div><div class="ttdoc">Eine Klasse, die ein Angebot repräsentiert.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:120</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Angebot_html_a10040af24f0b23fdfa93791759577b92"><div class="ttname"><a href="classHandelsplatz_1_1Angebot.html#a10040af24f0b23fdfa93791759577b92">Handelsplatz::Angebot::get_wert</a></div><div class="ttdeci">double get_wert()</div><div class="ttdoc">Gibt den Wert des Objekts zurück.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Angebot_html_a37c88952ca76b969f9108972bbaa90f8"><div class="ttname"><a href="classHandelsplatz_1_1Angebot.html#a37c88952ca76b969f9108972bbaa90f8">Handelsplatz::Angebot::get_obj</a></div><div class="ttdeci">std::string get_obj()</div><div class="ttdoc">Gibt den Namen des Objekts zurück.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Angebot_html_a958430934af5353b10ace74d146bc1f8"><div class="ttname"><a href="classHandelsplatz_1_1Angebot.html#a958430934af5353b10ace74d146bc1f8">Handelsplatz::Angebot::get_art_num</a></div><div class="ttdeci">int get_art_num()</div><div class="ttdoc">Gibt die Artikelnummer des Angebots zurück.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:153</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Angebot_html_aa8475da73c73bd33519f5513677bb203"><div class="ttname"><a href="classHandelsplatz_1_1Angebot.html#aa8475da73c73bd33519f5513677bb203">Handelsplatz::Angebot::get_ersteller</a></div><div class="ttdeci">std::string get_ersteller()</div><div class="ttdoc">Gibt den Ersteller des Angebots zurück.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Angebot_html_ad06131148797aec9b7ea4fe0cf675643"><div class="ttname"><a href="classHandelsplatz_1_1Angebot.html#ad06131148797aec9b7ea4fe0cf675643">Handelsplatz::Angebot::Angebot</a></div><div class="ttdeci">Angebot(std::string ersteller_, std::string objekt_, double wert_, int art_num_)</div><div class="ttdoc">Konstruktor für die Angebotklasse.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:129</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html">Handelsplatz::Artikel</a></div><div class="ttdoc">Eine Klasse, die einen Artikel repräsentiert.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:17</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a2674cf1b304dab05825c2a06ddf65c49"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a2674cf1b304dab05825c2a06ddf65c49">Handelsplatz::Artikel::get_streuung</a></div><div class="ttdeci">double get_streuung()</div><div class="ttdoc">Gibt die Streuung des Artikels zurück.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:54</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a27fec5952c11b7dcdd2be6dbb18635c6"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a27fec5952c11b7dcdd2be6dbb18635c6">Handelsplatz::Artikel::anz_minus_eins</a></div><div class="ttdeci">void anz_minus_eins()</div><div class="ttdoc">Verringert die Anzahl des Artikels um eins.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:94</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a4f110249d68e0d9559a34c1e963ebc26"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a4f110249d68e0d9559a34c1e963ebc26">Handelsplatz::Artikel::set_wert</a></div><div class="ttdeci">void set_wert(double wert_)</div><div class="ttdoc">Setzt den Wert des Artikels.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a58afb8024ec438c5dcab2b2f7efdd1b1"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a58afb8024ec438c5dcab2b2f7efdd1b1">Handelsplatz::Artikel::get_anz</a></div><div class="ttdeci">int get_anz()</div><div class="ttdoc">Gibt die Anzahl des Artikels zurück.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:102</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a6638a31904813a9069e2f2a910b9e72b"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a6638a31904813a9069e2f2a910b9e72b">Handelsplatz::Artikel::Artikel</a></div><div class="ttdeci">Artikel(std::string name_, double wert_)</div><div class="ttdoc">Konstruktor für die Artikelklasse.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:24</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a6844af891b96d38c75ba32a78177782c"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a6844af891b96d38c75ba32a78177782c">Handelsplatz::Artikel::get_name_</a></div><div class="ttdeci">std::string get_name_()</div><div class="ttdoc">Gibt den Namen des Artikels zurück.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a997493b48b6be3e99bd9057827cc6d9c"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a997493b48b6be3e99bd9057827cc6d9c">Handelsplatz::Artikel::aktueller_kurs</a></div><div class="ttdeci">double aktueller_kurs()</div><div class="ttdoc">Gibt den aktuellen Kurs des Artikels zurück.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:86</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_a9d1c808d54374f8ec52783e58326f139"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#a9d1c808d54374f8ec52783e58326f139">Handelsplatz::Artikel::set_name</a></div><div class="ttdeci">void set_name(std::string name_)</div><div class="ttdoc">Setzt den Namen des Artikels.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_aa860d64a890edf7b77750430d77f1d54"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#aa860d64a890edf7b77750430d77f1d54">Handelsplatz::Artikel::get_tendenz</a></div><div class="ttdeci">double get_tendenz()</div><div class="ttdoc">Gibt die Tendenz des Artikels zurück.</div><div class="ttdef"><b>Definition:</b> artikel.hpp:62</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_ab9f0f02d56a87dd3c23a0e89a240348b"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#ab9f0f02d56a87dd3c23a0e89a240348b">Handelsplatz::Artikel::aktualisiere_kurs</a></div><div class="ttdeci">void aktualisiere_kurs()</div><div class="ttdoc">Aktualisiert den Kurs des Artikels.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_aeadeb100094e6aa57824606c40800c94"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#aeadeb100094e6aa57824606c40800c94">Handelsplatz::Artikel::kursverlauf</a></div><div class="ttdeci">std::vector&lt; double &gt; kursverlauf(double tendenz, double streuung, double dt, double start, int anzahl)</div><div class="ttdoc">Berechnet den Kursverlauf des Artikels.</div></div>
+<div class="ttc" id="aclassHandelsplatz_1_1Artikel_html_aebf9b6d0b75734a795682c5ba23eeebf"><div class="ttname"><a href="classHandelsplatz_1_1Artikel.html#aebf9b6d0b75734a795682c5ba23eeebf">Handelsplatz::Artikel::get_wert_</a></div><div class="ttdeci">double get_wert_()</div><div class="ttdoc">Gibt den Wert des Artikels zurück.</div></div>
+<div class="ttc" id="anamespaceHandelsplatz_html"><div class="ttname"><a href="namespaceHandelsplatz.html">Handelsplatz</a></div><div class="ttdoc">Ein Namespace, der Klassen für den Handelsplatz enthält.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt von&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

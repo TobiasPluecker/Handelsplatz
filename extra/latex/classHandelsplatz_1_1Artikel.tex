@@ -1,0 +1,205 @@
+\hypertarget{classHandelsplatz_1_1Artikel}{}\doxysection{Handelsplatz\+::Artikel Klassenreferenz}
+\label{classHandelsplatz_1_1Artikel}\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+
+
+Eine Klasse, die einen \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} repräsentiert.  
+
+
+
+
+{\ttfamily \#include $<$artikel.\+hpp$>$}
+
+\doxysubsection*{Öffentliche Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHandelsplatz_1_1Artikel_a6638a31904813a9069e2f2a910b9e72b}{Artikel}} (std\+::string name\+\_\+, double wert\+\_\+)
+\begin{DoxyCompactList}\small\item\em Konstruktor für die Artikelklasse. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a6844af891b96d38c75ba32a78177782c}{get\+\_\+name\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Gibt den Namen des Artikels zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a9d1c808d54374f8ec52783e58326f139}{set\+\_\+name}} (std\+::string name\+\_\+)
+\begin{DoxyCompactList}\small\item\em Setzt den Namen des Artikels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHandelsplatz_1_1Artikel_aebf9b6d0b75734a795682c5ba23eeebf}{get\+\_\+wert\+\_\+}} ()
+\begin{DoxyCompactList}\small\item\em Gibt den Wert des Artikels zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a4f110249d68e0d9559a34c1e963ebc26}{set\+\_\+wert}} (double wert\+\_\+)
+\begin{DoxyCompactList}\small\item\em Setzt den Wert des Artikels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a2674cf1b304dab05825c2a06ddf65c49}{get\+\_\+streuung}} ()
+\begin{DoxyCompactList}\small\item\em Gibt die Streuung des Artikels zurück. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHandelsplatz_1_1Artikel_aa860d64a890edf7b77750430d77f1d54}{get\+\_\+tendenz}} ()
+\begin{DoxyCompactList}\small\item\em Gibt die Tendenz des Artikels zurück. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classHandelsplatz_1_1Artikel_aeadeb100094e6aa57824606c40800c94}{kursverlauf}} (double tendenz, double streuung, double dt, double start, int anzahl)
+\begin{DoxyCompactList}\small\item\em Berechnet den Kursverlauf des Artikels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_ab9f0f02d56a87dd3c23a0e89a240348b}\label{classHandelsplatz_1_1Artikel_ab9f0f02d56a87dd3c23a0e89a240348b}} 
+void \mbox{\hyperlink{classHandelsplatz_1_1Artikel_ab9f0f02d56a87dd3c23a0e89a240348b}{aktualisiere\+\_\+kurs}} ()
+\begin{DoxyCompactList}\small\item\em Aktualisiert den Kurs des Artikels. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a997493b48b6be3e99bd9057827cc6d9c}{aktueller\+\_\+kurs}} ()
+\begin{DoxyCompactList}\small\item\em Gibt den aktuellen Kurs des Artikels zurück. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a27fec5952c11b7dcdd2be6dbb18635c6}\label{classHandelsplatz_1_1Artikel_a27fec5952c11b7dcdd2be6dbb18635c6}} 
+void \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a27fec5952c11b7dcdd2be6dbb18635c6}{anz\+\_\+minus\+\_\+eins}} ()
+\begin{DoxyCompactList}\small\item\em Verringert die Anzahl des Artikels um eins. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHandelsplatz_1_1Artikel_a58afb8024ec438c5dcab2b2f7efdd1b1}{get\+\_\+anz}} ()
+\begin{DoxyCompactList}\small\item\em Gibt die Anzahl des Artikels zurück. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Ausführliche Beschreibung}
+Eine Klasse, die einen \mbox{\hyperlink{classHandelsplatz_1_1Artikel}{Artikel}} repräsentiert. 
+
+\doxysubsection{Beschreibung der Konstruktoren und Destruktoren}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a6638a31904813a9069e2f2a910b9e72b}\label{classHandelsplatz_1_1Artikel_a6638a31904813a9069e2f2a910b9e72b}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!Artikel@{Artikel}}
+\index{Artikel@{Artikel}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{Artikel()}{Artikel()}}
+{\footnotesize\ttfamily Handelsplatz\+::\+Artikel\+::\+Artikel (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+\_\+,  }\item[{double}]{wert\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor für die Artikelklasse. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em name\+\_\+} & Der Name des Artikels. \\
+\hline
+{\em wert\+\_\+} & Der Wert des Artikels. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentation der Elementfunktionen}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a997493b48b6be3e99bd9057827cc6d9c}\label{classHandelsplatz_1_1Artikel_a997493b48b6be3e99bd9057827cc6d9c}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!aktueller\_kurs@{aktueller\_kurs}}
+\index{aktueller\_kurs@{aktueller\_kurs}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{aktueller\_kurs()}{aktueller\_kurs()}}
+{\footnotesize\ttfamily double Handelsplatz\+::\+Artikel\+::aktueller\+\_\+kurs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gibt den aktuellen Kurs des Artikels zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Der aktuelle Kurs des Artikels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a58afb8024ec438c5dcab2b2f7efdd1b1}\label{classHandelsplatz_1_1Artikel_a58afb8024ec438c5dcab2b2f7efdd1b1}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!get\_anz@{get\_anz}}
+\index{get\_anz@{get\_anz}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{get\_anz()}{get\_anz()}}
+{\footnotesize\ttfamily int Handelsplatz\+::\+Artikel\+::get\+\_\+anz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gibt die Anzahl des Artikels zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Die Anzahl des Artikels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a6844af891b96d38c75ba32a78177782c}\label{classHandelsplatz_1_1Artikel_a6844af891b96d38c75ba32a78177782c}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!get\_name\_@{get\_name\_}}
+\index{get\_name\_@{get\_name\_}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{get\_name\_()}{get\_name\_()}}
+{\footnotesize\ttfamily std\+::string Handelsplatz\+::\+Artikel\+::get\+\_\+name\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt den Namen des Artikels zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Der Name des Artikels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a2674cf1b304dab05825c2a06ddf65c49}\label{classHandelsplatz_1_1Artikel_a2674cf1b304dab05825c2a06ddf65c49}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!get\_streuung@{get\_streuung}}
+\index{get\_streuung@{get\_streuung}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{get\_streuung()}{get\_streuung()}}
+{\footnotesize\ttfamily double Handelsplatz\+::\+Artikel\+::get\+\_\+streuung (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gibt die Streuung des Artikels zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Die Streuung des Artikels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_aa860d64a890edf7b77750430d77f1d54}\label{classHandelsplatz_1_1Artikel_aa860d64a890edf7b77750430d77f1d54}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!get\_tendenz@{get\_tendenz}}
+\index{get\_tendenz@{get\_tendenz}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{get\_tendenz()}{get\_tendenz()}}
+{\footnotesize\ttfamily double Handelsplatz\+::\+Artikel\+::get\+\_\+tendenz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gibt die Tendenz des Artikels zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Die Tendenz des Artikels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_aebf9b6d0b75734a795682c5ba23eeebf}\label{classHandelsplatz_1_1Artikel_aebf9b6d0b75734a795682c5ba23eeebf}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!get\_wert\_@{get\_wert\_}}
+\index{get\_wert\_@{get\_wert\_}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{get\_wert\_()}{get\_wert\_()}}
+{\footnotesize\ttfamily double Handelsplatz\+::\+Artikel\+::get\+\_\+wert\+\_\+ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gibt den Wert des Artikels zurück. 
+
+\begin{DoxyReturn}{Rückgabe}
+Der Wert des Artikels. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_aeadeb100094e6aa57824606c40800c94}\label{classHandelsplatz_1_1Artikel_aeadeb100094e6aa57824606c40800c94}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!kursverlauf@{kursverlauf}}
+\index{kursverlauf@{kursverlauf}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{kursverlauf()}{kursverlauf()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Handelsplatz\+::\+Artikel\+::kursverlauf (\begin{DoxyParamCaption}\item[{double}]{tendenz,  }\item[{double}]{streuung,  }\item[{double}]{dt,  }\item[{double}]{start,  }\item[{int}]{anzahl }\end{DoxyParamCaption})}
+
+
+
+Berechnet den Kursverlauf des Artikels. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em tendenz} & Die Tendenz des Kursverlaufs. \\
+\hline
+{\em streuung} & Die Streuung des Kursverlaufs. \\
+\hline
+{\em dt} & Der Zeitintervall für die Kursberechnung. \\
+\hline
+{\em start} & Der Startwert des Kurses. \\
+\hline
+{\em anzahl} & Die Anzahl der Kurswerte. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Rückgabe}
+Ein Vektor mit den Kurswerten. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a9d1c808d54374f8ec52783e58326f139}\label{classHandelsplatz_1_1Artikel_a9d1c808d54374f8ec52783e58326f139}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!set\_name@{set\_name}}
+\index{set\_name@{set\_name}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{set\_name()}{set\_name()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Artikel\+::set\+\_\+name (\begin{DoxyParamCaption}\item[{std\+::string}]{name\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Setzt den Namen des Artikels. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em name\+\_\+} & Der Name des Artikels. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHandelsplatz_1_1Artikel_a4f110249d68e0d9559a34c1e963ebc26}\label{classHandelsplatz_1_1Artikel_a4f110249d68e0d9559a34c1e963ebc26}} 
+\index{Handelsplatz::Artikel@{Handelsplatz::Artikel}!set\_wert@{set\_wert}}
+\index{set\_wert@{set\_wert}!Handelsplatz::Artikel@{Handelsplatz::Artikel}}
+\doxysubsubsection{\texorpdfstring{set\_wert()}{set\_wert()}}
+{\footnotesize\ttfamily void Handelsplatz\+::\+Artikel\+::set\+\_\+wert (\begin{DoxyParamCaption}\item[{double}]{wert\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Setzt den Wert des Artikels. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em wert\+\_\+} & Der Wert des Artikels. \\
+\hline
+\end{DoxyParams}
+
+
+Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei\+:\begin{DoxyCompactItemize}
+\item 
+include/artikel.\+hpp\end{DoxyCompactItemize}
